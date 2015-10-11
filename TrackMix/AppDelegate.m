@@ -31,14 +31,16 @@
 }
 
 - (IBAction)takeFloatValueForVolumeFrom:(id)sender {
-    NSString *senderName = nil;
-    
-    if (sender == self.textField) {
-        senderName = @"textField";
-    }
-    else {
-        senderName = @"slider";
-    }
-    NSLog(@"%@ sent takeFloatValueForVolumeFrom: with value %1.2f", senderName, [sender floatValue]);
+    float newValue = [sender floatValue];
+    [self.track setVolume:newValue];
+    [self updateUserInterface];
 }
+
+- (void)updateUserInterface {
+    
+    float volume = [self.track volume];
+    [self.textField setFloatValue:volume];
+    [self.slider setFloatValue:volume];
+}
+
 @end
