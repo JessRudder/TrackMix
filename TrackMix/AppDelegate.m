@@ -13,10 +13,13 @@
 @property (weak) IBOutlet NSWindow *window;
 @end
 
+#import "Track.h"
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    Track *aTrack = [[Track alloc] init];
+    [self setTrack:aTrack];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C115CC51BCB231500505F64 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C115CC41BCB231500505F64 /* Track.m */; };
 		4CA95C961BCAF68100AD6D7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA95C951BCAF68100AD6D7C /* AppDelegate.m */; };
 		4CA95C981BCAF68100AD6D7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA95C971BCAF68100AD6D7C /* main.m */; };
 		4CA95C9A1BCAF68100AD6D7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA95C991BCAF68100AD6D7C /* Images.xcassets */; };
@@ -25,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C115CC31BCB231500505F64 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		4C115CC41BCB231500505F64 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		4CA95C8F1BCAF68100AD6D7C /* TrackMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA95C931BCAF68100AD6D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA95C941BCAF68100AD6D7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 		4CA95C911BCAF68100AD6D7C /* TrackMix */ = {
 			isa = PBXGroup;
 			children = (
+				4C115CC31BCB231500505F64 /* Track.h */,
+				4C115CC41BCB231500505F64 /* Track.m */,
 				4CA95C941BCAF68100AD6D7C /* AppDelegate.h */,
 				4CA95C951BCAF68100AD6D7C /* AppDelegate.m */,
 				4CA95C991BCAF68100AD6D7C /* Images.xcassets */,
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C115CC51BCB231500505F64 /* Track.m in Sources */,
 				4CA95C981BCAF68100AD6D7C /* main.m in Sources */,
 				4CA95C961BCAF68100AD6D7C /* AppDelegate.m in Sources */,
 			);
@@ -401,6 +407,7 @@
 				4CA95CAE1BCAF68100AD6D7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CA95CAF1BCAF68100AD6D7C /* Build configuration list for PBXNativeTarget "TrackMixTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +416,7 @@
 				4CA95CB11BCAF68100AD6D7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
