@@ -20,6 +20,7 @@
     // Insert code here to initialize your application
     Track *aTrack = [[Track alloc] init];
     [self setTrack:aTrack];
+    [self updateUserInterface];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -27,7 +28,8 @@
 }
 
 - (IBAction)mute:(id)sender {
-    NSLog(@"received a mute: message");
+    [self.track setVolume:0.0];
+    [self updateUserInterface];
 }
 
 - (IBAction)takeFloatValueForVolumeFrom:(id)sender {
