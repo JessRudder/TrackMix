@@ -23,4 +23,9 @@
     // Insert code here to tear down your application
 }
 
+- (IBAction)mute:(id)sender {
+}
+
+- (IBAction)takeFloatValueForVolumeFrom:(id)sender {
+}
 @end

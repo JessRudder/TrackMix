@@ -14,6 +14,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="slider" destination="UkF-fK-HCH" id="kwV-CJ-OmA"/>
+                <outlet property="textField" destination="7xX-Ks-tdn" id="FN5-cS-xfC"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -683,6 +685,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="mute:" target="Voe-Tx-rLC" id="i9J-6Q-HAJ"/>
+                        </connections>
                     </button>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xX-Ks-tdn">
                         <rect key="frame" x="89" y="408" width="96" height="22"/>
@@ -692,11 +697,17 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <action selector="takeFloatValueForVolumeFrom:" target="Voe-Tx-rLC" id="J0t-9r-lER"/>
+                        </connections>
                     </textField>
                     <slider horizontalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UkF-fK-HCH">
                         <rect key="frame" x="127" y="46" width="21" height="356"/>
                         <animations/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="11" doubleValue="5" tickMarkPosition="right" sliderType="linear" id="pl7-qP-D16"/>
+                        <connections>
+                            <action selector="takeFloatValueForVolumeFrom:" target="Voe-Tx-rLC" id="lg8-qy-ETd"/>
+                        </connections>
                     </slider>
                 </subviews>
                 <animations/>
